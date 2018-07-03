@@ -2,7 +2,7 @@ import json
 
 from datetime import datetime
 
-from flask import Flask, render_template, redirect, request
+from flask import Flask, render_template, redirect, request, Markup, escape
 
 application = Flask(__name__)
 
@@ -58,6 +58,10 @@ def save():
     created_at = datetime.now()
     save_data(start, finish, memo, created_at)
     return redirect('/')
+
+@application.template_filter('nl2br')
+def nl2br_filter(s):
+    return escape(s).replace('\n', Markup('<br>'))
 
 if __name__ == '__main__':
     application.run('0.0.0.0', 8000, debug=True)
