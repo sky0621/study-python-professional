@@ -1,6 +1,6 @@
 # モジュール分割設計と単体テスト
 
-## ★セットアップ
+## ★セットアップとUT実行
 
 - 同プロジェクト専用のPython環境を用意
 ```
@@ -10,6 +10,23 @@ $ python3 -m venv venv
 - 用意したPython環境を適用
 ```
 $ source venv/bin/activate
+```
+
+- 必要なモジュールをインストール
+```
+$ pip install testfixtures
+$ pip install pytest
+$ pip install pytest-cov
+```
+
+- テスト実行
+```
+$ python -m unittest test_sample.py
+```
+
+- カバレッジ
+```
+$ pytest --cov tests
 ```
 
 ## ★アーキテクチャ参考例
