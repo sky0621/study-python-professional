@@ -8,9 +8,15 @@ Welcome to SW-Project's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents-sample:
 
    sample
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents-sample-md:
+
+   sample-md
 
 Indices and tables
 ==================
