@@ -17,6 +17,8 @@ $ source venv/bin/activate
 $ pip install testfixtures
 $ pip install pytest
 $ pip install pytest-cov
+$ pip install sqlalchemy
+$ pip install webtest
 ```
 
 - テスト実行
