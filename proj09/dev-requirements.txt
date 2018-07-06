@@ -1,0 +1,4 @@
+-f wheelhouse
+-f http://devpi/+myproject/simple
+-r run-requires.txt
+colander
